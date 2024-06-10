@@ -3,9 +3,9 @@
 use core\App;
 use core\Utils;
 
-App::getRouter()->setDefaultRoute('hello'); #default action
-//App::getRouter()->setLoginRoute('login'); #action to forward if no permissions
+App::getRouter()->setDefaultRoute('library'); #default action
+App::getRouter()->setLoginRoute('login'); #action to forward if no permissions
 
 Utils::addRoute('hello', 'HelloCtrl');
-Utils::addRoute('library', 'biblioteka');
-//Utils::addRoute('action_name', 'controller_class_name');
+Utils::addRoute('library', 'Library');
+Utils::addRoute('login', 'Auth');

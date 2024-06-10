@@ -5,13 +5,15 @@ $conf->debug = true; # set true during development and use in your code (for ins
 $conf->server_name = 'localhost';   # server address and port
 $conf->protocol = 'http';           # http or https
 $conf->app_root = '/Projekt/public';   # project subfolder in domain (relative to main domain)
+//$conf->app_url = $conf->protocol.$conf->server_name.$conf'/assets/css/';
+//http://localhost/AI-repo/P7/assets/css/main.css
 
 # ---- Database config - values required by Medoo
 $conf->db_type = 'mysql';
 $conf->db_server = 'localhost';
-$conf->db_name = '_database_name';
-$conf->db_user = '_user';
-$conf->db_pass = '_password';
+$conf->db_name = 'library_db';
+$conf->db_user = 'library_dbadmin';
+$conf->db_pass = 'Administrator';
 $conf->db_charset = 'utf8';
 
 # ---- Database config - optional values
