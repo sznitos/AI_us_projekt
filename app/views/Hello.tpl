@@ -8,7 +8,6 @@
 
 <body>
     
-    My value: {$value}
     
     {if $msgs->isInfo()}
         <ul>

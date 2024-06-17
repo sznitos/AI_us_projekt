@@ -1,6 +1,6 @@
 {extends file="main.tpl"}
 
-{block name=top}
+{block name=content}
 
 <div class="splash-container">
     <p>
@@ -8,7 +8,7 @@
             <section class="col-4 col-12-narrower">
 			<div class="box highlight">
 				<i class="icon solid major fa-pencil-alt"></i>
-				<h3>O apzzzzzzzzzzzzzzzzzzzzzzzzzzzzlikacji LibApp...</h3>
+				<h3>O aplikacji LibApp...</h3>
 				<p>Idea która przyświecała stworzeniu aplikacji LibApp było usprawnienie pracy biblioteki, umożliwiając łatwą ewidencję i zarządzanie systemem wypożyczeń książek przez czytelników. </p>
 			</div>
 		</section>   

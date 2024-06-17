@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.4, created on 2024-06-10 20:00:48
+/* Smarty version 4.3.4, created on 2024-06-17 21:15:26
   from 'F:\Programy\xampp\htdocs\Projekt\app\views\Hello.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.4',
-  'unifunc' => 'content_66673f500c4406_61385828',
+  'unifunc' => 'content_66708b4e439824_77242818',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '7dd4d18eafb94c786d75fa4d1327a457432ba00d' => 
     array (
       0 => 'F:\\Programy\\xampp\\htdocs\\Projekt\\app\\views\\Hello.tpl',
-      1 => 1524337902,
+      1 => 1718650571,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_66673f500c4406_61385828 (Smarty_Internal_Template $_smarty_tpl) {
+function content_66708b4e439824_77242818 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
 
@@ -31,8 +31,6 @@ function content_66673f500c4406_61385828 (Smarty_Internal_Template $_smarty_tpl)
 
 <body>
     
-    My value: <?php echo $_smarty_tpl->tpl_vars['value']->value;?>
-
     
     <?php if ($_smarty_tpl->tpl_vars['msgs']->value->isInfo()) {?>
         <ul>
