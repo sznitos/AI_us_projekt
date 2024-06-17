@@ -33,6 +33,20 @@ body {
 	line-height: 1;
 }
 
+td, tr, th {
+        border: 0.1em dashed gray;
+        padding: 0.2em;
+}
+th{
+    font-weight: bold;
+    border: 1px solid black;
+    background-color: gray;
+    color:white;
+}
+td{
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
 ol, ul {
 	list-style: none;
 }

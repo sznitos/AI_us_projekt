@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.4, created on 2024-06-17 22:24:39
+/* Smarty version 4.3.4, created on 2024-06-17 22:38:23
   from 'F:\Programy\xampp\htdocs\Projekt\app\views\Library.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.4',
-  'unifunc' => 'content_66709b87b49838_26527263',
+  'unifunc' => 'content_66709ebf74a3d4_83898068',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '383fab966ba0503f70ce3009b225c6624cb8bca9' => 
     array (
       0 => 'F:\\Programy\\xampp\\htdocs\\Projekt\\app\\views\\Library.tpl',
-      1 => 1718655877,
+      1 => 1718656690,
       2 => 'file',
     ),
   ),
@@ -21,14 +21,14 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:messages.tpl' => 1,
   ),
 ),false)) {
-function content_66709b87b49838_26527263 (Smarty_Internal_Template $_smarty_tpl) {
+function content_66709ebf74a3d4_83898068 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_6000609366709b87b43c80_48211023', 'top');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_24649276266709ebf740bb9_16997398', 'top');
 ?>
 
 
@@ -37,58 +37,59 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_6000609366709b87b4
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, "main.tpl");
 }
 /* {block 'top'} */
-class Block_6000609366709b87b43c80_48211023 extends Smarty_Internal_Block
+class Block_24649276266709ebf740bb9_16997398 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'top' => 
   array (
-    0 => 'Block_6000609366709b87b43c80_48211023',
+    0 => 'Block_24649276266709ebf740bb9_16997398',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
-
-<div class="splash-container">
-    <p>
-    <div class="splash">
-            <section class="col-4 col-12-narrower">
-			<div class="box highlight">
-				<i class="icon solid major fa-pencil-alt"></i>
-				<h3>O apzzzzzzzzzzzzzzzzzzzzzzzzzzzzlikacji LibApp...</h3>
-				<p>Idea która przyświecała stworzeniu aplikacji LibApp było usprawnienie pracy biblioteki, umożliwiając łatwą ewidencję i zarządzanie systemem wypożyczeń książek przez czytelników. </p>
-			</div>
-		</section>   
-    </div>
-
+<header>
+   <h2>Zasoby biblioteki oferują poniższe pozycje...</h2>
+</header>
+<div class="col-6 col-12-narrower imp-narrower">
+   <div id="content">
+      <!-- Content -->
+      <article>
+         <header>
+            <table cellpadding="5">
+    <thead>
+        <tr>
+    <th>Tytuł</th><th>Imię autora</th> <th>Nazwisko</th> <th>Rok Wydania</th>
+        </tr>
+    <thead>
+    <tbody>
+<?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['lista']->value, 'wiersz');
+$_smarty_tpl->tpl_vars['wiersz']->do_else = true;
+if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['wiersz']->value) {
+$_smarty_tpl->tpl_vars['wiersz']->do_else = false;
+?>
+  <td><?php echo $_smarty_tpl->tpl_vars['wiersz']->value["title"];?>
+</td>
+  <td><?php echo $_smarty_tpl->tpl_vars['wiersz']->value["author_name"];?>
+</td>
+  <td><?php echo $_smarty_tpl->tpl_vars['wiersz']->value["author_surname"];?>
+</td>
+  <td><?php echo $_smarty_tpl->tpl_vars['wiersz']->value["year"];?>
+</td>
+</tr>
+<?php
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
+</tbody>
+    </table>
+         </header>
+  
+      </article>
+   </div>
 </div>
-    
-<form action="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_url;?>
-login" method="post"  class="pure-form pure-form-aligned bottom-margin">
-    <div class="row gtr-uniform gtr-50">
-        <div class="col-6 col-12-xsmall">
-            <div class="col-12">
-            <legend>Logowanie do systemu</legend>
-            	<fieldset>
-            </div>
-            <div class="container">
-                
-                    <div class="col-6 col-12-xsmall">
-			<label for="id_login">ldddddddogin: </label>
-			<input id="id_login" type="text" name="login"/>
-                    </div>
-                    <div class="col-6 col-12-xsmall">
-			<label for="id_pass">pass: </label>
-			<input id="id_pass" type="password" name="pass" /><br />
-                    </div>
-		<div class="col-12">
-			<input type="submit" value="zaloguj" class="pure-button pure-button-primary"/>
-		</div>
-                	
-	<div class="container">
-        </div></div>
-        </fieldset>
-</form>	
+</div>
+</div>
 
 <?php if (\core\RoleUtils::inRole('admin')) {?>
 

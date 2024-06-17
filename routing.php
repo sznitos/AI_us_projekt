@@ -12,6 +12,7 @@ Utils::addRoute('logout', 'LoginCtrl');
 Utils::addRoute('hello', 'HelloCtrl');
 Utils::addRoute('login', 'LoginCtrl');
 Utils::addRoute('library', 'LibraryCtrl');
+Utils::addRoute('books', 'LibraryCtrl');
 
 Utils::addRoute('library', 'LibraryCtrl',["user","admin"]);
 Utils::addRoute('cleardata', 'DataCtrl',["admin"]);
