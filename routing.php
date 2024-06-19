@@ -14,11 +14,11 @@ Utils::addRoute('login', 'LoginCtrl');
 
 Utils::addRoute('library', 'LibraryCtrl');
 Utils::addRoute('library', 'LibraryCtrl',["user","admin"]);
-Utils::addRoute('books', 'LibraryCtrl');
-Utils::addRoute('returnBook', 'LibraryCtrl');
+Utils::addRoute('books', 'LibraryCtrl',["user","admin"]);
+Utils::addRoute('returnBook', 'LibraryCtrl',["user","admin"]);
 
-Utils::addRoute('profile', 'ProfileCtrl');
+Utils::addRoute('profile', 'ProfileCtrl',["user","admin"]);
 
-Utils::addRoute('manage', 'ManageCtrl');
+Utils::addRoute('manage', 'ManageCtrl',["user","admin"]);
 
 
