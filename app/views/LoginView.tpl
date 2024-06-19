@@ -1,9 +1,22 @@
 {extends file="main.tpl"}
+{block name=menu} 
+<ul>
+<li class=""><a href="{$conf->action_root}startPage">Strona Główna</a></li>
+{if count($conf->roles)>0}
+<li class=""><a href="{$conf->action_root}library">Wypożycz</a></li>
+<li class=""><a href="{$conf->action_root}profile">Profil</a></li>
+<li class=""><a href="{$conf->action_root}logout">Wyloguj</a></li>
+{else}	
+<li class="current"><a href="{$conf->action_root}login">Logowanie</a></li>
+{/if}
+{/block}
 {block name=top}
+{*
 <header>
    <h2>O aplikacji</h2>
    <p>Aplikacja obsługująca bibliotekę w Szczebrzeszynie. Dzięki tej aplikacji praca biblioteki została usprawniona o 60 %!</p>
 </header>
+*}
 <div class="col-6 col-12-narrower imp-narrower">
    <div id="content">
       <!-- Content -->

@@ -6,9 +6,6 @@
 {if count($conf->roles)>0}
 <li class="current"><a href="{$conf->action_root}library">Wypożycz</a></li>
 <li class=""><a href="{$conf->action_root}profile">Profil</a></li>
-    {if \core\RoleUtils::inRole('user')}
-        <li class=""><a href="{$conf->action_root}manage">Zarządzaj</a></li>
-    {/if}
 <li class=""><a href="{$conf->action_root}logout">Wyloguj</a></li>
 {else}	
 <li class=""><a href="{$conf->action_root}login">Logowanie</a></li>
