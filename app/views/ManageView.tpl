@@ -1,16 +1,20 @@
 {extends file="main.tpl"}
 {block name=menu} 
-<nav id="nav">
-<ul>
-<li class=""><a href="{$conf->action_root}startPage">Strona Główna</a></li>
-{if count($conf->roles)>0}
-<li class="current"><a href="{$conf->action_root}library">Wypożycz</a></li>
-<li class=""><a href="{$conf->action_root}profile">Profil</a></li>
-<li class=""><a href="{$conf->action_root}logout">Wyloguj</a></li>
-{else}	
-<li class=""><a href="{$conf->action_root}login">Logowanie</a></li>
-{/if}
-</nav>
+    <nav id="nav">
+        <ul>
+            <li class=""><a href="{$conf->action_root}startPage">Strona Główna</a></li>
+            {if count($conf->roles)>0}
+                <li class=""><a href="{$conf->action_root}library">Wypożycz</a></li>
+                <li class=""><a href="{$conf->action_root}profile">Profil</a></li>
+                {if \core\RoleUtils::inRole('user')}
+                    <li class="current"><a href="{$conf->action_root}manage">Zarządzaj</a></li>
+                {/if}
+                <li class=""><a href="{$conf->action_root}logout">Wyloguj</a></li>
+            {else}   
+                <li class=""><a href="{$conf->action_root}login">Logowanie</a></li>
+            {/if}
+        </ul>
+    </nav>
 {/block}
 
 {block name=top}

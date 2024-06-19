@@ -1,4 +1,5 @@
 {extends file="main.tpl"}
+
 {block name=menu} 
 <nav id="nav">
 <ul>
@@ -10,6 +11,7 @@
         <li class=""><a href="{$conf->action_root}manage">Zarządzaj</a></li>
     {/if}
 <li class=""><a href="{$conf->action_root}logout">Wyloguj</a></li>
+
 {else}	
 <li class=""><a href="{$conf->action_root}login">Logowanie</a></li>
 {/if}
@@ -20,11 +22,12 @@
 <header>
 	<h2>Zasoby biblioteki oferują poniższe pozycje...</h2>
 </header>
-<div class="col-6 col-12-narrower imp-narrower">
+<div class="row gtr-100">
+<div class="col-12 col-12-narrower imp-narrower">
 	<div id="content">
 		<!-- Content -->
 		<article>
-			<header>
+			<header></header>
 				<table cellpadding="5">
 					<thead>
 						<tr>
@@ -44,14 +47,16 @@
 						{/foreach}
 					</tbody>
 				</table>
-			</header>
+			
 		</article>
 	</div>
 </div>
 </div>
-</div>
-{if \core\RoleUtils::inRole('admin')}
-ADMIN SUPER
-{/if}
-{include file='messages.tpl'}
+
 {/block}
+
+{if \core\RoleUtils::inRole('admin')}
+    ADMIN SUPER
+{/if}
+
+{include file='messages.tpl'}

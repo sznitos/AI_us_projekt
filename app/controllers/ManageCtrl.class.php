@@ -13,7 +13,7 @@ class ManageCtrl {
         $records = App::getDB()->select("book", "*");
         App::getSmarty()->assign("lista",$records); 
         App::getSmarty()->assign('page_title','Zarządzanie | LibApp');
-        App::getSmarty()->display("Library.tpl");
+        App::getSmarty()->display("ManageView.tpl");
         
     }
     

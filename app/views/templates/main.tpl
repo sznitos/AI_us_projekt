@@ -7,6 +7,7 @@
 		<meta name="description" content="{$page_description|default:"Opis domyślny"}">
 		<title>{$page_title|default:"LibApp"}</title>
 		<link rel="stylesheet" href="{$conf->app_url}/assets/css/main.css">
+                
 	</head>
 	<body class="is-preload">
 	<div id="page-wrapper">

@@ -72,7 +72,7 @@ class LoginCtrl {
             $userDataJson = json_encode($userData);
             setcookie('userData', $userDataJson, time() + (86400 * 30), '/'); // Ciasteczko ważne przez 30 dni (86400 sekund * 30)
 
-            App::getRouter()->redirectTo("showdata");
+            App::getRouter()->redirectTo("profile");
         } else {
             App::getSmarty()->assign('page_title','Logowanie | LibApp');
             $this->generateView();
