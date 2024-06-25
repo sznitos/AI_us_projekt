@@ -6,7 +6,7 @@
             {if count($conf->roles)>0}
                 <li class=""><a href="{$conf->action_root}library">Wypożycz</a></li>
                 <li class=""><a href="{$conf->action_root}profile">Profil</a></li>
-                {if \core\RoleUtils::inRole('user')}
+                {if \core\RoleUtils::inRole('admin')}
                     <li class=""><a href="{$conf->action_root}manage">Zarządzaj</a></li>
                 {/if}
                 <li class=""><a href="{$conf->action_root}logout">Wyloguj</a></li>
@@ -41,7 +41,9 @@
          </form></div>
                <div class="col-6 col-12-narrower">
                    <h3>Jeżeli nie posiadasz konta i chciałbyś je założyć, skontaktuj się z administratorem serwisu.</h3>
+                   <a href="mailto:admin_zakladacz@kont.pl">
                    <input type="submit" class="button alt" value="Wyślij">
+                   </a>
                    </div>
 
 

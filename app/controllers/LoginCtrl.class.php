@@ -37,17 +37,32 @@ class LoginCtrl {
 
         try {
             $user = App::getDB()->get("user", "*", [
-                "login" => $this->form->login,
-                "active" => 1
+                "login" => $this->form->login
             ]);
 
-            if ($user && $this->form->pass == $user['password']) {
-                $this->form->role = 'user';
-                return true;
-            } else {
+            if (!$user) {
                 Utils::addErrorMessage('Niepoprawny login lub hasło');
                 return false;
             }
+
+            if ($user['password'] !== $this->form->pass) {
+                Utils::addErrorMessage('Niepoprawny login lub hasło');
+                return false;
+            }
+
+            if ($user['active'] == 0) {
+                Utils::addErrorMessage('Twoje konto jest nieaktywne');
+                return false;
+            }
+
+            // Przypisanie roli na podstawie statusu active
+            if ($user['active'] == 1) {
+                $this->form->role = 'admin';
+            } elseif ($user['active'] == 2) {
+                $this->form->role = 'user';
+            }
+
+            return true;
         } catch (\Exception $e) {
             Utils::addErrorMessage('Wystąpił błąd podczas logowania do bazy danych');
             return false;
@@ -66,7 +81,8 @@ class LoginCtrl {
             $rola = $this->form->role;
 
             RoleUtils::addRole($rola);
-   $userData = [
+
+            $userData = [
                 'username' => $this->form->login
             ];
             $userDataJson = json_encode($userData);
@@ -87,7 +103,6 @@ class LoginCtrl {
     public function generateView() {
         App::getSmarty()->assign('form', $this->form);
         App::getSmarty()->display('LoginView.tpl');
-//        App::getSmarty()->assign('page_title','Strona logowania');
         App::getSmarty()->assign('page_title','Logowanie | LibApp');
     }
 }
