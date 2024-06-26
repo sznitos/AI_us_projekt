@@ -17,6 +17,13 @@
     </nav>
 {/block}
 
+{*
+
+            RACZEJ OUT
+
+*}
+
+
 {block name=top}
 <header>
 	<h2>Panel administratorski</h2>

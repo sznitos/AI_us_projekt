@@ -19,11 +19,13 @@
                <ul>
                <li class="current"><a href="{$conf->action_root}startPage">Strona Główna</a></li>
                {if count($conf->roles)>0}
-               <li class=""><a href="{$conf->action_root}library">Wypożycz</a></li>
+      {if \core\RoleUtils::inRole('admin')}
+      <li class=""><a href="{$conf->action_root}library">Zarządzaj</a></li>
+      {else}
+      <li class=""><a href="{$conf->action_root}library">Wypożycz</a></li>
+      {/if}
                <li class=""><a href="{$conf->action_root}profile">Profil</a></li>
-               {if \core\RoleUtils::inRole('admin')}
-               <li class=""><a href="{$conf->action_root}manage">Zarządzaj</a></li>
-               {/if}
+
                <li class=""><a href="{$conf->action_root}logout">Wyloguj</a></li>
                {else}	
                <li class=""><a href="{$conf->action_root}login">Logowanie</a></li>
