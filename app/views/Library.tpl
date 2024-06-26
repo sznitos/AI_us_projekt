@@ -1,13 +1,5 @@
 {extends file="main.tpl"}
-<script type="text/javascript">
-   function confirmLink(event, url) {
-       if (confirm("Czy na pewno chcesz usunąć ten rekord?")) {
-           window.location.href = url;
-       } else {
-           event.preventDefault();
-       }
-   }
-</script>
+
 {block name=menu} 
 <nav id="nav">
    <ul>

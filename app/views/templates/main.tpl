@@ -8,6 +8,17 @@
       <link rel="stylesheet" href="{$conf->app_url}/assets/css/main.css">
    </head>
    <body class="is-preload">
+       
+{*   obsługa usuwania rekordów - podwójna weryfikacja    *}
+       <script type="text/javascript">
+   function confirmLink(event, url) {
+       if (confirm("Czy na pewno chcesz usunąć ten rekord?")) {
+           window.location.href = url;
+       } else {
+           event.preventDefault();
+       }
+   }
+</script>
       <div id="page-wrapper">
          <div id="header">
             <h1><a href="index.html" id="logo">LibApp <em>by Kromoliński</em></a></h1>
