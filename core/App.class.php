@@ -46,14 +46,7 @@ class App {
 
         //load parameters from clean URL and load action
         if (self::$config->clean_urls) {
-            $req_uri = $_SERVER['REQUEST_URI'];
-            $len = strlen(self::$config->app_root);
-            if ($len > 0) {
-                if (substr($req_uri, 0, $len) == self::$config->app_root) {
-                    $req_uri = substr($req_uri, $len);
-                }                 
-            }
-            $req_uri = ltrim($req_uri,"/");
+            $req_uri = str_replace(self::$config->app_root . self::$config->public_dir . "/", "", $_SERVER['REQUEST_URI']);
             $p = strpos($req_uri, "?");
             if ($p)
                 $req_uri = substr($req_uri, 0, $p);#cut off query parameters
@@ -64,7 +57,7 @@ class App {
         } else {
             //get action to perform from GET
             App::getRouter()->setAction(isset($_GET[self::$config->action_param]) ? $_GET[self::$config->action_param] : null );
-        }        
+        }
     }
 
     /**
@@ -147,7 +140,7 @@ class App {
      */
     public static function &getDB(): \Medoo\Medoo {
         if (!isset(self::$db)) {
-            require_once self::$config->root_path . '/lib/Medoo/Medoo.php';
+            require_once self::$config->root_path . '/lib/medoo/Medoo.php';
             self::$db = new \Medoo\Medoo([
                 'database_type' => self::$config->db_type,
                 'server' => self::$config->db_server,
