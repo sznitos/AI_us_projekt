@@ -3464,3 +3464,12 @@ a#delete.button:hover{
     min-width: 3em;
     font-size: 0.7em;
 }
+tr:nth-child(even) { 
+    background-color:#EEE; 
+    border:1px solid black;
+}
+
+tr:nth-child(odd) { 
+    background-color:#FFF; 
+    border:1px solid black;
+}
