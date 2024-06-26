@@ -3424,8 +3424,26 @@ ul.history {
     color: #dc3545; /* Czerwony kolor tekstu */
     font-weight: bold; /* Pogrubienie tekstu */
 }
+/* formularz dodawnia ksiazki */
+input[type="submit"].add{
+    margin-left:1em;
+    margin-right:0.5em;
+    background-color: #99ff99;
+}
+input[type="submit"].add:hover{
+    margin-left:1em;
+    margin-right:0.5em;
+    background-color:#339900;
+}
+a#return.button{
+    background-color:#33ccff;
+}
+a#return.button:hover{
+    background-color:#3366ff;
+}
+
 td.actions{
-   min-width: 2em;
+   min-width: 3em;
    max-width: 1em
 }
 a#edit.button   {
@@ -3434,7 +3452,7 @@ a#edit.button   {
     padding: 0.1em;
     max-width: 6em;
     line-height: 2em !important;
-    min-width: 3em;
+    min-width: 3.2em;
     font-size: 0.7em;
 }
 a#edit.button:hover{
@@ -3443,7 +3461,7 @@ a#edit.button:hover{
     padding: 0.1em;
     max-width: 6em;
     line-height: 2em !important;
-    min-width: 3em;
+    min-width: 3.2em;
     font-size: 0.7em;
 }
 a#delete.button{
@@ -3452,7 +3470,7 @@ a#delete.button{
     padding: 0.1em;
     max-width: 6em;
     line-height: 2em !important;
-    min-width: 3em;
+    min-width: 3.2em;
     font-size: 0.7em;
 }
 a#delete.button:hover{
@@ -3461,7 +3479,7 @@ a#delete.button:hover{
     padding: 0.1em;
     max-width: 6em;
     line-height: 2em !important;
-    min-width: 3em;
+    min-width: 3.2em;
     font-size: 0.7em;
 }
 tr:nth-child(even) { 

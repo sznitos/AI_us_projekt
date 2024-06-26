@@ -31,8 +31,8 @@
 	<div id="content">
 		<!-- Treść -->
 		<article>
-			<div class="row gtr-200">
-			<section class="col-7 col-12-narrower">	
+			<div class="row gtr-190">
+			<section class="col-6 col-12-narrower">	
                             {if isset($user.borrowed_books) && count($user.borrowed_books['current']) > 0}
 					<h3>Aktualnie wypożyczone:</h3>
 					{foreach $user.borrowed_books['current'] as $book}
@@ -49,7 +49,7 @@
 					<p>Brak obecnie wypożyczonych książek.</p>
 					{/if}
 				</section>
-                                <section class="col-7 col-12-narrower">
+                                <section class="col-6 col-12-narrower">
 				{if isset($user.borrowed_books) && count($user.borrowed_books['history']) > 0}
 				
 					<h3>Historia wypożyczeń:</h3>
@@ -76,4 +76,5 @@
 {if \core\RoleUtils::inRole('admin')}
 ADMIN SUPER
 {/if}
+
 {include file='messages.tpl'}

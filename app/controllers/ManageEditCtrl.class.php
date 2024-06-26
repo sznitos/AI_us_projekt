@@ -134,7 +134,7 @@ class ManageEditCtrl {
                         "book_id" => $this->form->id
                     ]);
                 }
-                Utils::addInfoMessage('Pomyślnie zapisano rekord');
+                Utils::addInfoMessage('Pomyślnie zmodyfikowano rekord');
             } catch (\PDOException $e) {
                 Utils::addErrorMessage('Wystąpił błąd podczas usuwania rekordu');
                 if (App::getConf()->debug)

@@ -2,7 +2,7 @@
 
 {block name=top}
 <header>
-    <h2>Edytuj książkę</h2>
+    <h2>Wprowadzanie nowej książki</h2>
 </header>
 <div class="col-6 col-12-narrower imp-narrower">
     <div id="content">
@@ -23,8 +23,8 @@
                         <label for="year">Rok Wydania:</label>
                         <input type="number" name="year" value="{$form->year}" required>
                         
-                        <input type="submit" class="button small" value="Zapisz"/>
-                        <a class="pure-button button-secondary" href="{$conf->action_root}manage">Powrót</a>
+                        <input type="submit" class="add" value="Zapisz"/>
+                        <a class="button" id="return" href="{$conf->action_root}library">Powrót</a>
                     </fieldset>
                     <input type="hidden" name="id" value="{$form->id}">
                 </form>
