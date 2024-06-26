@@ -1,5 +1,4 @@
 {extends file="main.tpl"}
-
 {block name=menu} 
 <nav id="nav">
    <ul>
@@ -23,12 +22,12 @@
    <h2>      {if \core\RoleUtils::inRole('admin')}
       Zasoby biblioteki oferują poniższe pozycje + Możliwość zarządzania
       {else}
-     Zasoby biblioteki oferują poniższe pozycje
-      {/if}</h2>
-</header>    
-    {/block}
+      Zasoby biblioteki oferują poniższe pozycje
+      {/if}
+   </h2>
+</header>
+{/block}
 {block name=top}
-
 <div class="row gtr-100">
    <div class="col-12 col-12-narrower imp-narrower">
       <div id="content">
@@ -36,7 +35,9 @@
          <article>
             <header></header>
             {include file='messages.tpl'}
+            {if \core\RoleUtils::inRole('admin')}
             <h3><button onclick="window.location.href='{$conf->action_root}bookNew'" class="pure-button pure-button-primary">Dodaj nową książkę</button></h3>
+            {/if}
             <table cellpadding="5">
                <thead>
                   <tr>

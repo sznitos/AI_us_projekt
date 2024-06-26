@@ -3485,9 +3485,11 @@ a#delete.button:hover{
 tr:nth-child(even) { 
     background-color:#EEE; 
     border:1px solid black;
+    font-weight: bold;
 }
 
 tr:nth-child(odd) { 
     background-color:#FFF; 
     border:1px solid black;
+    font-weight: bold;
 }
