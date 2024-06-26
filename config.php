@@ -5,8 +5,6 @@ $conf->debug = true; # set true during development and use in your code (for ins
 $conf->server_name = 'localhost';   # server address and port
 $conf->protocol = 'http';           # http or https
 $conf->app_root = '/Projekt/public';   # project subfolder in domain (relative to main domain)
-//$conf->app_url = $conf->protocol.$conf->server_name.$conf'/assets/css/';
-//http://localhost/AI-repo/P7/assets/css/main.css
 
 # ---- Database config - values required by Medoo
 $conf->db_type = 'mysql';

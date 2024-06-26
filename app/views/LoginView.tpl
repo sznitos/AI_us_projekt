@@ -1,5 +1,6 @@
 {extends file="main.tpl"}
 {block name=menu} 
+    
     <nav id="nav">
         <ul>
             <li class=""><a href="{$conf->action_root}startPage">Strona Główna</a></li>
@@ -38,7 +39,9 @@
                   <input type="submit" value="Zaloguj" class="pure-button pure-button-primary"/>
                </div>
             </fieldset>
-         </form></div>
+         </form>
+
+          </div>
                <div class="col-6 col-12-narrower">
                    <h3>Jeżeli nie posiadasz konta i chciałbyś je założyć, skontaktuj się z administratorem serwisu.</h3>
                    <a href="mailto:admin_zakladacz@kont.pl">

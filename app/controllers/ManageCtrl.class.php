@@ -4,6 +4,7 @@ namespace app\controllers;
 
 use core\App;
 use core\Message;
+use core\Validator;
 use core\Utils;
 use core\ParamUtils;
 

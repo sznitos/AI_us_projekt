@@ -8,20 +8,25 @@
     <div id="content">
         <article>
             <header>
-                <form action="{$conf->action_root}saveBook/{$book.id}" method="post">
-                    <label for="title">Tytuł:</label>
-                    <input type="text" name="title" value="{$book.title}" required>
-                    
-                    <label for="author_name">Imię autora:</label>
-                    <input type="text" name="author_name" value="{$book.author_name}" required>
-                    
-                    <label for="author_surname">Nazwisko autora:</label>
-                    <input type="text" name="author_surname" value="{$book.author_surname}" required>
-                    
-                    <label for="year">Rok Wydania:</label>
-                    <input type="number" name="year" value="{$book.year}" required>
-                    
-                    <input type="submit" class="button small" value="Zapisz zmiany">
+                <form action="{$conf->action_root}bookSave" method="post">
+                    <fieldset>
+                        <legend></legend>
+                        <label for="title">Tytuł:</label>
+                        <input type="text" name="title" value="{$form->title}" required>
+                        
+                        <label for="name">Imię autora:</label>
+                        <input type="text" name="name" value="{$form->name}" required>
+                        
+                        <label for="surname">Nazwisko autora:</label>
+                        <input type="text" name="surname" value="{$form->surname}" required>
+                        
+                        <label for="year">Rok Wydania:</label>
+                        <input type="number" name="year" value="{$form->year}" required>
+                        
+                        <input type="submit" class="button small" value="Zapisz"/>
+                        <a class="pure-button button-secondary" href="{$conf->action_root}manage">Powrót</a>
+                    </fieldset>
+                    <input type="hidden" name="id" value="{$form->id}">
                 </form>
             </header>
         </article>

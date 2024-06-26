@@ -37,7 +37,7 @@ class ParamUtils {
     }
 
     public static function getFromCookies($param_name, $required = false, $required_message = null, $index = null) {
-        return self::getFrom($_COOKIE, $param_name, $required, $required_message, $index);
+        return self::getFrom($_COOKIES, $param_name, $required, $required_message, $index);
     }
 
     public static function getFromSession($param_name, $required = false, $required_message = null, $index = null) {
