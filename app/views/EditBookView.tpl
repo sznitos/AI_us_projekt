@@ -1,7 +1,26 @@
 {extends file="main.tpl"}
-
+{block name=menu} 
+    <body onload="window.location='#nav';">
+<nav id="nav">
+   <ul>
+      <li class=""><a href="{$conf->action_root}startPage">Strona Główna</a></li>
+      {if count($conf->roles)>0}
+      {if \core\RoleUtils::inRole('admin')}
+      <li class="current"><a href="{$conf->action_root}library">Zarządzaj</a></li>
+      {else}
+      <li class="current"><a href="{$conf->action_root}library">Wypożycz</a></li>
+      {/if}
+      <li class=""><a href="{$conf->action_root}profile">Profil</a></li>
+      <li class=""><a href="{$conf->action_root}logout">Wyloguj</a></li>
+      {else}   
+      <li class=""><a href="{$conf->action_root}login">Logowanie</a></li>
+      {/if}
+   </ul>
+</nav>
+{/block}
 {block name=top}
-<header>
+    <div id=scroll-to"></div>
+<header id="scroll-to">
     <h2>Wprowadzanie nowej książki</h2>
 </header>
 <div class="col-6 col-12-narrower imp-narrower">
