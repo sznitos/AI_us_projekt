@@ -3447,7 +3447,7 @@ td.actions{
    min-width: 3em;
    max-width: 1em
 }
-a#edit.button   {
+a#edit.button, a#borrow.button, a#return.button{
     color:white;
     background-color: #99ff99;
     padding: 0.1em;
@@ -3525,4 +3525,37 @@ ul li.msg_warning{
 
 ul li.msg_warning:hover{
     background-color: #f69606;
+}
+
+/*niedostepne ksiazki*/
+tr#borrowed{
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' preserveAspectRatio='none' viewBox='0 0 100 100'><path d='M100 0 L0 100 ' stroke='black' stroke-width='1'/><path d='M0 0 L100 100 ' stroke='black' stroke-width='1'/></svg>");
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size: 100% 100%, auto;
+    background-color:#888;
+    color:black;
+    font-weight: normal;
+}
+
+tr#borrowed:hover{
+    background-color:#626262;
+}
+
+a#borrow.button, a#return.button{
+    color:black;
+    padding: 5%;
+    max-width: 6em;
+    line-height: 95%;
+    font-weight: normal;
+    min-width: 95%;
+}
+a#return.button{
+    color:black;
+    background-color: #007bff;
+    padding: 5%;
+    max-width: 6em;
+    line-height: 95%;
+    font-weight: normal;
+    min-width: 95%;
 }

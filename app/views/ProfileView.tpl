@@ -51,9 +51,10 @@
 					{/if}
 				</section>
                                 <section class="col-6 col-12-narrower">
+                                    <h3>Historia wypożyczeń:</h3>
 				{if isset($user.borrowed_books) && count($user.borrowed_books['history']) > 0}
 				
-					<h3>Historia wypożyczeń:</h3>
+					
 					{foreach $user.borrowed_books['history'] as $book}
 					<ul class="history">
 						<li>

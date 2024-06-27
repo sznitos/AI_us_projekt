@@ -114,7 +114,8 @@ class ProfileCtrl {
             ], [
                 'AND' => [
                     'borrow.user_id' => $user_id,
-                    "borrow.borrow_end[<]" => '1970-01-01' // Wypożyczenia, które nie zostały jeszcze zwrócone
+//                    "borrow.borrow_end[<>]" => NULL // Wypożyczenia, które nie zostały jeszcze zwrócone
+                    "borrow.borrow_end[<>]" => ["0000-00-00", date("Y-m-d")]
                 ]
             ]);
 
