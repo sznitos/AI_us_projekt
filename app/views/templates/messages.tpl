@@ -1,31 +1,29 @@
-{if $msgs->isMessage()}
-    <div class="messages">
-        {if $msgs->isInfo()}
-            <ul class="info">
-                {foreach $msgs->getMessages() as $msg}
-                    {if $msg->type == 'info'}
-                        <b>{$msg->text}</b>
-                    {/if}
-                {/foreach}
-            </ul>
-        {/if}
-        {if $msgs->isWarning()}
-            <ul class="warning">
-                {foreach $msgs->getMessages() as $msg}
-                    {if $msg->type == 'warning'}
-                        <li>{$msg->text}</li>
-                    {/if}
-                {/foreach}
-            </ul>
-        {/if}
-        {if $msgs->isError()}
-            <ul class="error">
-                {foreach $msgs->getMessages() as $msg}
-                    {if $msg->type == 'error'}
-                        <li>{$msg->text}</li>
-                    {/if}
-                {/foreach}
-            </ul>
-        {/if}
+{if $msgs->isError()}
+    <div class="messages error">
+        {foreach from=$msgs->getMessages() item=msg}
+            {if $msg->type == 'error'}
+                <p>{$msg->text}</p>
+            {/if}
+        {/foreach}
+    </div>
+{/if}
+
+{if $msgs->isWarning()}
+    <div class="messages warning">
+        {foreach from=$msgs->getMessages() item=msg}
+            {if $msg->type == 'warning'}
+                <p>{$msg->text}</p>
+            {/if}
+        {/foreach}
+    </div>
+{/if}
+
+{if $msgs->isInfo()}
+    <div class="messages info">
+        {foreach from=$msgs->getMessages() item=msg}
+            {if $msg->type == 'info'}
+                <p>{$msg->text}</p>
+            {/if}
+        {/foreach}
     </div>
 {/if}
