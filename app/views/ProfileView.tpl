@@ -1,6 +1,6 @@
 {extends file="main.tpl"}
 {block name=menu} 
-    <body onload="window.location='#nav'">
+
 <nav id="nav">
 	<ul>
 		<li class=""><a href="{$conf->action_root}startPage">Strona Główna</a></li>
