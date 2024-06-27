@@ -2876,11 +2876,11 @@ input, select, textarea {
 		/* Header */
 
 			#header {
-				padding: 0.7em 0 0 0;
+				padding: 2em 0 0 0;
 			}
 
 				#header h1 {
-					padding: 0 0 0.7em 0;
+					padding: 0 0 1.75em 0;
 				}
 
 		/* Banner */
@@ -3493,36 +3493,4 @@ tr:nth-child(odd) {
     background-color:#FFF; 
     border:1px solid black;
     font-weight: bold;
-}
-ul li.msg_error, li.msg_warning, li.msg_info{
-    color:white;
-    font-weight: bold;
-    padding: 0.4em;
-    list-style-position: inside;
-    list-style-type:none;
-    border-radius: 5px;
-    text-align: center;
-    margin-top: 0.4em;
-}
-ul li.msg_info{
-    background-color: #25941e;
-}
-
-ul li.msg_info:hover{
-    background-color: #00cc00;
-}
-
-ul li.msg_error{
-    background-color: #cc3300;
-}
-ul li.msg_error:hover{
-    background-color: #ff1e1e;
-}
-
-ul li.msg_warning{
-    background-color: #de8703;  
-}
-
-ul li.msg_warning:hover{
-    background-color: #f69606;
 }
