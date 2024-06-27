@@ -112,7 +112,7 @@ class ManageEditCtrl {
             try {
                 if ($this->form->id == '') {
                     $count = App::getDB()->count("book");
-                    if ($count <= 20) {
+                    if ($count <= 90) {
                         App::getDB()->insert("book", [
                             "title" => $this->form->title,
                             "author_name" => $this->form->name,
@@ -120,7 +120,7 @@ class ManageEditCtrl {
                             "year" => $this->form->year
                         ]);
                     } else {
-                        Utils::addInfoMessage('Ograniczenie: Zbyt dużo rekordów. Aby dodać nowy usuń wybrany wpis.');
+                        Utils::addErrorMessage('Uwaga: więcej książek nie pomieścimy :(');
                         $this->generateView();
                         exit();
                     }
