@@ -43,7 +43,7 @@
                         <input type="number" name="year" value="{$form->year}" required>
                         
                         <input type="submit" class="add" value="Zapisz"/>
-                        <a class="button" id="return" href="{$conf->action_root}library">Powrót</a>
+                        <a class="button" id="return1" href="{$conf->action_root}library">Powrót</a>
                     </fieldset>
                     <input type="hidden" name="id" value="{$form->id}">
                 </form>

@@ -25,6 +25,7 @@ Utils::addRoute('bookSave', 'ManageEditCtrl', ["admin"]);
 
 Utils::addRoute('borrowBook', 'LibraryCtrl',["user", "admin"]);
 Utils::addRoute('returnBook', 'LibraryCtrl',["user", "admin"]);
+Utils::addRoute('profileReturn', 'ProfileCtrl', ["user", "admin"]);
 
 
 //Utils::addRoute('personNew',     'PersonEditCtrl',	['user','admin']);

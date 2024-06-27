@@ -6,6 +6,7 @@ use core\App;
 use core\Utils;
 use core\RoleUtils;
 use core\ParamUtils;
+use core\SessionUtils;
 use app\forms\LoginForm;
 
 class LibraryCtrl {
@@ -27,7 +28,7 @@ class LibraryCtrl {
 
         // Pobranie informacji o wypożyczeniach
         $borrows = App::getDB()->select("borrow", "*", [
-            "borrow_end[<=]" => ["0000-00-00", date("Y-m-d")]
+            "borrow_end" => "0000-00-00"
         ]);
 
         // Dodanie flagi 'borrowed' do książek
@@ -39,22 +40,18 @@ class LibraryCtrl {
                 }
             }
         }
-        
-        if(isset($_COOKIE['userData'])) {
+
+        if (isset($_COOKIE['userData'])) {
             // Odczytanie danych użytkownika z ciasteczka
             $userDataJson = $_COOKIE['userData'];
             $userData = json_decode($userDataJson, true);
-            
+
             // Pobranie wszystkich danych użytkownika na podstawie loginu z bazy danych
             $user = $this->getUserData($userData['username']);
-            
+
             // Formatowanie imienia i nazwiska (pierwsza duża litera)
             $user['name'] = ucfirst(strtolower($user['name']));
             $user['surname'] = ucfirst(strtolower($user['surname']));
-
-            // Pobranie aktualnych i historycznych wypożyczeń książek
-//            $borrowed_books = $this->getUserBorrowedBooks($user['user_id']);
-//            $user['borrowed_books'] = $borrowed_books;
 
             if ($user) {
                 // Przypisanie danych do Smarty
@@ -65,21 +62,12 @@ class LibraryCtrl {
         } else {
             echo "Brak danych użytkownika w ciasteczku.";
         }
-        
-                // Dodanie flagi 'borrowed' do książek
-                foreach ($books as &$book) {
-            foreach ($borrows as $borrow) {
-                if ($borrow['user_id'] == $user['user_id']) {
-                    $book['borrowed_own'] = true;
-                    break;
-                }
-            }
-                }
 
         App::getSmarty()->assign("lista", $books);
         App::getSmarty()->assign('page_title', 'Biblioteka | LibApp');
         App::getSmarty()->display("Library.tpl");
     }
+
     private function getUserData($login) {
         try {
             // Pobranie wszystkich danych użytkownika z bazy danych na podstawie loginu
@@ -93,6 +81,7 @@ class LibraryCtrl {
             return null;
         }
     }
+
     public function action_borrowBook() {
         // Pobranie ID książki z formularza
         $book_id = ParamUtils::getFromRequest('book_id');
@@ -102,7 +91,7 @@ class LibraryCtrl {
 
         if (!$user_id) {
             Utils::addErrorMessage('Musisz być zalogowany, aby wypożyczyć książkę.');
-//            App::getRouter()->redirectTo('login');
+            App::getRouter()->redirectTo('login');
         }
 
         try {
@@ -110,7 +99,7 @@ class LibraryCtrl {
                 "book_id" => $book_id,
                 "user_id" => $user_id,
                 "borrow_start" => date("Y-m-d"),
-                "borrow_end" => null
+                "borrow_end" => "0000-00-00"
             ]);
             Utils::addInfoMessage('Książka została wypożyczona.');
         } catch (\PDOException $e) {
@@ -132,7 +121,7 @@ class LibraryCtrl {
                 "borrow_end" => date("Y-m-d")
             ], [
                 "book_id" => $book_id,
-                "borrow_end" => null
+                "borrow_end" => "0000-00-00"
             ]);
             Utils::addInfoMessage('Książka została zwrócona.');
         } catch (\PDOException $e) {

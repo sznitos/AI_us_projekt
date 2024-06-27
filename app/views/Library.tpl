@@ -1,4 +1,4 @@
-{*Library.tpl*}
+{* Library.tpl *}
 
 {extends file="main.tpl"}
 {block name=menu}
@@ -41,13 +41,6 @@
                 {if \core\RoleUtils::inRole('admin')}
                 <h3><button onclick="window.location.href='{$conf->action_root}bookNew'" class="pure-button pure-button-primary">Dodaj nową książkę</button></h3>
                 {/if}
-                
-                	<p>
-		<strong>ID: </strong>{$user.user_id}<br>
-		<strong>Imię: </strong>{$user.name}<br>
-		<strong>Nazwisko: </strong>{$user.surname}<br>
-	</p>
-                
                 <table cellpadding="5">
                     <thead>
                         <tr>
@@ -61,29 +54,29 @@
                         </tr>
                     </thead>
                     <tbody>
-                       {foreach $lista as $wiersz}
-    {strip}
-    <tr{if isset($wiersz.borrowed) && $wiersz.borrowed} id="borrowed"{/if}>
-        <td>{$wiersz.title}</td>
-        <td>{$wiersz.author_name}</td>
-        <td>{$wiersz.author_surname}</td>
-        <td>{$wiersz.year}</td>
-        <td class="actions">
-            {if \core\RoleUtils::inRole('admin')}
-                <a class="button" id="edit" href="{$conf->action_root}bookEdit/{$wiersz.book_id}">Edytuj</a>
-                &nbsp;
-                <a class="button" id="delete" onclick="confirmLink(event, '{$conf->action_root}bookDelete/{$wiersz.book_id}')">Usuń</a>
-            {else}
-                {if isset($wiersz.borrowed) && $wiersz.borrowed}
-                {else}
-                    <a class="button" id="borrow" href="{$conf->action_root}borrowBook/{$wiersz.book_id}">Wypożycz</a>
-                {/if}
-            {/if}
-        </td>
-    </tr>
-    {/strip}
-{/foreach}
-
+                        {foreach $lista as $wiersz}
+                        {strip}
+                        <tr{if isset($wiersz.borrowed) && $wiersz.borrowed} id="borrowed"{/if}>
+                            <td>{$wiersz.title}</td>
+                            <td>{$wiersz.author_name}</td>
+                            <td>{$wiersz.author_surname}</td>
+                            <td>{$wiersz.year}</td>
+                            <td class="actions">
+                                {if \core\RoleUtils::inRole('admin')}
+                                <a class="button" id="edit" href="{$conf->action_root}bookEdit/{$wiersz.book_id}">Edytuj</a>
+                                &nbsp;
+                                <a class="button" id="delete" onclick="confirmLink(event, '{$conf->action_root}bookDelete/{$wiersz.book_id}')">Usuń</a>
+                                {else}
+                                {if isset($wiersz.borrowed) && $wiersz.borrowed}
+                                <a class="button" id="return" href="{$conf->action_root}returnBook/{$wiersz.book_id}">Oddaj</a>
+                                {else}
+                                <a class="button" id="borrow" href="{$conf->action_root}borrowBook/{$wiersz.book_id}">Wypożycz</a>
+                                {/if}
+                                {/if}
+                            </td>
+                        </tr>
+                        {/strip}
+                        {/foreach}
                     </tbody>
                 </table>
             </article>
@@ -91,6 +84,3 @@
     </div>
 </div>
 {/block}
-{if \core\RoleUtils::inRole('admin')}
-ADMIN SUPER
-{/if}
