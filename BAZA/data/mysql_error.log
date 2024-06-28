@@ -1,0 +1,241 @@
+2024-06-28 10:37:41 0 [Note] Starting MariaDB 10.4.32-MariaDB source revision c4143f909528e3fab0677a28631d10389354c491 as process 25236
+2024-06-28 10:37:41 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2024-06-28 10:37:41 0 [Note] InnoDB: Uses event mutexes
+2024-06-28 10:37:41 0 [Note] InnoDB: Compressed tables use zlib 1.3
+2024-06-28 10:37:41 0 [Note] InnoDB: Number of pools: 1
+2024-06-28 10:37:41 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2024-06-28 10:37:41 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2024-06-28 10:37:41 0 [Note] InnoDB: Completed initialization of buffer pool
+2024-06-28 10:37:41 0 [Note] InnoDB: Starting crash recovery from checkpoint LSN=300288
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=231] with future log sequence number 304058
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=368] with future log sequence number 304058
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=230] with future log sequence number 304014
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=367] with future log sequence number 304014
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=229] with future log sequence number 303970
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=366] with future log sequence number 303970
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=228] with future log sequence number 303926
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=365] with future log sequence number 303926
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=227] with future log sequence number 303882
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=364] with future log sequence number 303882
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=226] with future log sequence number 303838
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=363] with future log sequence number 303838
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=225] with future log sequence number 303794
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=362] with future log sequence number 303794
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=224] with future log sequence number 303750
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=361] with future log sequence number 303750
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=223] with future log sequence number 303706
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=360] with future log sequence number 303706
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=276] with future log sequence number 556264
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=404] with future log sequence number 556264
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=275] with future log sequence number 556220
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=435] with future log sequence number 556220
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=274] with future log sequence number 556176
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=434] with future log sequence number 556176
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=273] with future log sequence number 556132
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=403] with future log sequence number 556132
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=272] with future log sequence number 556088
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=433] with future log sequence number 556088
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=271] with future log sequence number 556044
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=432] with future log sequence number 556044
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=269] with future log sequence number 555984
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=431] with future log sequence number 555984
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=268] with future log sequence number 555940
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=430] with future log sequence number 555940
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=267] with future log sequence number 555896
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=429] with future log sequence number 555896
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=263] with future log sequence number 555852
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=399] with future log sequence number 555852
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=262] with future log sequence number 555808
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=397] with future log sequence number 555808
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=261] with future log sequence number 555764
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=396] with future log sequence number 555764
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=260] with future log sequence number 555720
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=398] with future log sequence number 555720
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=259] with future log sequence number 555676
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=395] with future log sequence number 555676
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=258] with future log sequence number 555632
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=394] with future log sequence number 555632
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=257] with future log sequence number 555588
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=393] with future log sequence number 555588
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=256] with future log sequence number 555544
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=391] with future log sequence number 555544
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=255] with future log sequence number 555484
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=390] with future log sequence number 555484
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=254] with future log sequence number 555440
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=392] with future log sequence number 555440
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=253] with future log sequence number 555396
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=372] with future log sequence number 555396
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=252] with future log sequence number 555352
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=389] with future log sequence number 555352
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=251] with future log sequence number 555308
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=388] with future log sequence number 555308
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=250] with future log sequence number 555264
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=371] with future log sequence number 555264
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=249] with future log sequence number 555220
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=370] with future log sequence number 555220
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=248] with future log sequence number 555176
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=387] with future log sequence number 555176
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=247] with future log sequence number 555132
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=386] with future log sequence number 555132
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=246] with future log sequence number 555088
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=385] with future log sequence number 555088
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=245] with future log sequence number 555044
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=244] with future log sequence number 554984
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=242] with future log sequence number 554940
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=241] with future log sequence number 554896
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=240] with future log sequence number 554852
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=239] with future log sequence number 554808
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=238] with future log sequence number 554764
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=237] with future log sequence number 554720
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=236] with future log sequence number 554676
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=235] with future log sequence number 554632
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=234] with future log sequence number 554588
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=233] with future log sequence number 554544
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=232] with future log sequence number 554484
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=229] with future log sequence number 554352
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=228] with future log sequence number 554308
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=227] with future log sequence number 554264
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=203] with future log sequence number 553308
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=340] with future log sequence number 553308
+2024-06-28 10:37:41 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=202] with future log sequence number 553264
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=59] log sequence number 301994 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=324] log sequence number 301994 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=60] log sequence number 552691 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=325] log sequence number 552691 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=241] log sequence number 554896 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=381] log sequence number 554896 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=242] log sequence number 554940 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=382] log sequence number 554940 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=244] log sequence number 554984 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=383] log sequence number 554984 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=245] log sequence number 555044 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=384] log sequence number 555044 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=258] log sequence number 555632 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=394] log sequence number 555632 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=267] log sequence number 555896 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=429] log sequence number 555896 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=268] log sequence number 555940 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=430] log sequence number 555940 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=272] log sequence number 556088 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=433] log sequence number 556088 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=277] log sequence number 562825 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=436] log sequence number 562825 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=279] log sequence number 562913 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=405] log sequence number 562913 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=280] log sequence number 447874 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=406] log sequence number 447874 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=281] log sequence number 562957 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=409] log sequence number 562957 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=282] log sequence number 563001 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=410] log sequence number 563001 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=283] log sequence number 563045 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=411] log sequence number 563045 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=284] log sequence number 563089 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=414] log sequence number 563089 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=285] log sequence number 563133 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=412] log sequence number 563133 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=286] log sequence number 563666 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=413] log sequence number 563666 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=287] log sequence number 564862 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=417] log sequence number 564862 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=288] log sequence number 564906 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=415] log sequence number 564906 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=289] log sequence number 564950 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=416] log sequence number 564950 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=290] log sequence number 572218 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=418] log sequence number 572218 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=291] log sequence number 572262 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=419] log sequence number 572262 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=292] log sequence number 572306 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=420] log sequence number 572306 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=293] log sequence number 572350 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=423] log sequence number 572350 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=294] log sequence number 572394 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=421] log sequence number 572394 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=295] log sequence number 572454 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=422] log sequence number 572454 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=296] log sequence number 572498 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=424] log sequence number 572498 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=297] log sequence number 574666 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=425] log sequence number 574666 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=302] log sequence number 539369 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=303] log sequence number 536489 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=304] log sequence number 536547 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=305] log sequence number 539549 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2024-06-28 10:37:41 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2024-06-28 10:37:41 0 [Note] InnoDB: Setting file 'F:\Programy\xampp\mysql\data\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2024-06-28 10:37:41 0 [Note] InnoDB: File 'F:\Programy\xampp\mysql\data\ibtmp1' size is now 12 MB.
+2024-06-28 10:37:41 0 [Note] InnoDB: Waiting for purge to start
+2024-06-28 10:37:41 0 [Note] InnoDB: 10.4.32 started; log sequence number 300297; transaction id 1572
+2024-06-28 10:37:41 0 [Note] InnoDB: Loading buffer pool(s) from F:\Programy\xampp\mysql\data\ib_buffer_pool
+2024-06-28 10:37:41 0 [Note] Plugin 'FEEDBACK' is disabled.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Page [page id: space=0, page number=243] log sequence number 409644 is in the future! Current system log sequence number 300306.
+2024-06-28 10:37:41 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-06-28 10:37:41 0 [Note] InnoDB: Buffer pool(s) load completed at 240628 10:37:41
+2024-06-28 10:37:41 0 [Note] Server socket created on IP: '::'.
