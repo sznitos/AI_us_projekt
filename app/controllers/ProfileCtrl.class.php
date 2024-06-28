@@ -41,7 +41,7 @@ class ProfileCtrl {
                     ]
                 ]);
                 if ($affectedRows > 0) {
-                    Utils::addErrorMessage("Książka została pomyślnie zwrócona.");
+                    Utils::addInfoMessage("Książka została pomyślnie zwrócona.");
                 } else {
                     Utils::addErrorMessage("Nie udało się zwrócić książki.");
                 }

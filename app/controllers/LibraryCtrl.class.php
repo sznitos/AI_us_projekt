@@ -28,7 +28,10 @@ class LibraryCtrl {
 
         // Pobranie informacji o wypożyczeniach
         $borrows = App::getDB()->select("borrow", "*", [
-            "borrow_end" => "0000-00-00"
+            "OR"=>[
+                "borrow_end[<]" => date('Y-m-d'),
+                "borrow_end" => NULL,
+            ]        
         ]);
 
         // Dodanie flagi 'borrowed' do książek
