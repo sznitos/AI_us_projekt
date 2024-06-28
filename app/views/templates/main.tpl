@@ -22,8 +22,7 @@
       <div id="page-wrapper">
          <div id="header">
             <h1><a href="index.html" id="logo">LibApp <em>by Kromoliński</em></a></h1>
-            <section id="banner">LIBRARY PHOTO
-            </section>
+            <section id="banner"> </section>
             <!----------------- MENU ----------------->
             {block name=menu} 
             <nav id="nav">

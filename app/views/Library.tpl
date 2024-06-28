@@ -63,15 +63,16 @@
                             <td>{$wiersz.year}</td>
                             <td class="actions">
                                 {if \core\RoleUtils::inRole('admin')}
-                                <a class="button" id="edit" href="{$conf->action_root}bookEdit/{$wiersz.book_id}">Edytuj</a>
-                                &nbsp;
-                                <a class="button" id="delete" onclick="confirmLink(event, '{$conf->action_root}bookDelete/{$wiersz.book_id}')">Usuń</a>
+                                    <a class="button" id="edit" href="{$conf->action_root}bookEdit/{$wiersz.book_id}">Edytuj</a>
+                                    &nbsp;
+                                    <a class="button" id="delete" onclick="confirmLink(event, '{$conf->action_root}bookDelete/{$wiersz.book_id}')">Usuń</a>
                                 {else}
-                                {if isset($wiersz.borrowed) && $wiersz.borrowed}
-                                <a class="button" id="return" href="{$conf->action_root}returnBook/{$wiersz.book_id}">Oddaj</a>
-                                {else}
-                                <a class="button" id="borrow" href="{$conf->action_root}borrowBook/{$wiersz.book_id}">Wypożycz</a>
-                                {/if}
+                                    {if isset($wiersz.borrowed) && $wiersz.borrowed}
+                                        Niedostępna
+                                        {*                                        <a class="button" id="return" href="{$conf->action_root}returnBook/{$wiersz.book_id}">Oddaj</a>*}
+                                    {else}
+                                        <a class="button" id="borrow" href="{$conf->action_root}borrowBook/{$wiersz.book_id}">Wypożycz</a>
+                                    {/if}
                                 {/if}
                             </td>
                         </tr>

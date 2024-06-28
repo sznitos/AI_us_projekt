@@ -3435,6 +3435,14 @@ input[type="submit"].add:hover{
     margin-right:0.5em;
     background-color:#339900;
 }
+button[type="submit"].return{
+    margin:0.3em;
+    background-color: #1eb8fb;
+}
+button[type="submit"].return:hover{
+    margin:0.3em;
+    background-color: #007bff;
+}
 a#return.button{
     background-color:#33ccff;
 }
@@ -3446,6 +3454,7 @@ td.actions{
    min-width: 3em;
    max-width: 1em
 }
+
 a#edit.button, a#borrow.button, a#return.button{
     color:white;
     background-color: #99ff99;
@@ -3455,6 +3464,14 @@ a#edit.button, a#borrow.button, a#return.button{
     min-width: 3.2em;
     font-size: 0.7em;
 }
+td.actions a#borrow.button{
+    max-width: fit-content;
+    margin: 0 auto;
+    padding:0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 a#edit.button:hover{
     color:white;
     background-color: #339900;
@@ -3528,14 +3545,13 @@ ul li.msg_warning:hover{
 
 /*niedostepne ksiazki*/
 tr#borrowed{
-    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' preserveAspectRatio='none' viewBox='0 0 100 100'><path d='M100 0 L0 100 ' stroke='black' stroke-width='2'/><path d='M0 0 L100 100 ' stroke='black' stroke-width='2'/></svg>");
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' preserveAspectRatio='none' viewBox='0 0 100 100'><path d='M100 0 L0 100 ' stroke='black' stroke-width='1'/><path d='M0 0 L100 100 ' stroke='black' stroke-width='1'/></svg>");
     background-repeat:no-repeat;
     background-position:center center;
     background-size: 100% 100%, auto;
-    background-color:#666666;
-    color:white;
+    background-color:#888;
+    color:black;
     font-weight: normal;
-    opacity: 0.5;
 }
 
 tr#borrowed:hover{
@@ -3545,10 +3561,19 @@ tr#borrowed:hover{
 a#borrow.button, a#return.button{
     color:black;
     padding: 5%;
-    max-width: 6em;
+    font-weight: auto;
+    max-width: 98%;
     line-height: 95%;
     font-weight: normal;
     min-width: 95%;
+}
+a#borrow.button{
+    padding: 0em;
+    font-size:1em;
+    
+}
+a#borrow.button:hover{
+background-color: #00cc00;
 }
 a#return.button{
     color:black;
@@ -3558,4 +3583,11 @@ a#return.button{
     line-height: 95%;
     font-weight: normal;
     min-width: 95%;
+}
+thead tr th{
+    background-color: #33ccff;
+    color:#212121
+}
+tbody tr:hover{
+    background-color: #ccffcc;
 }
