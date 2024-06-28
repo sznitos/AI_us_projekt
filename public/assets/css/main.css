@@ -3393,6 +3393,11 @@ li > li.active {
     border-radius: 5px;
     margin: 0em;
 }
+li.active:hover {
+    background-color: #25941e;
+    color: white;
+    border-radius: 5px
+}
 ul.history {
     background-color: #8d918d; /* Szare tło */
     color: black;
@@ -3430,12 +3435,7 @@ input[type="submit"].add:hover{
     margin-right:0.5em;
     background-color:#339900;
 }
-a#return2.button{
-    background-color:#33ccff;
-}
-a#return2.button:hover{
-    background-color:#3366ff;
-}a#return.button{
+a#return.button{
     background-color:#33ccff;
 }
 a#return.button:hover{
@@ -3446,7 +3446,7 @@ td.actions{
    min-width: 3em;
    max-width: 1em
 }
-a#edit.button, a#borrow.button, a#return.button, button.return{
+a#edit.button, a#borrow.button, a#return.button{
     color:white;
     background-color: #99ff99;
     padding: 0.1em;
@@ -3557,19 +3557,4 @@ a#return.button{
     line-height: 95%;
     font-weight: normal;
     min-width: 95%;
-}
-button.return{
-    background-color: #00cc00;
-        color:white;
-        min-width: 97%;
-        margin:0.3em;
-        margin-bottom: 0.5em;
-        padding:0.2em;
-}
-
-button.return:hover{
-    background-color: #339900;
-        color:white;
-        min-width: 97%;
-        padding:0.2em;
 }

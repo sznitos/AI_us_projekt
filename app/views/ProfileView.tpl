@@ -36,12 +36,12 @@
 			<section class="col-6 col-12-narrower">	
                             {if isset($user.borrowed_books) && count($user.borrowed_books['current']) > 0}
 					<h3>Aktualnie wypożyczone:</h3>
-{foreach $user.borrowed_books['current'] as $book}
-<ul class="active">
-    <li class="active">
-        <strong>Tytuł: </strong>{$book.title}<br>
-        <strong>Autor: </strong>{$book.author_name} {$book.author_surname}<br>
-        <strong>Data wypożyczenia: </strong>{$book.borrow_start}<br>
+					{foreach $user.borrowed_books['current'] as $book}
+					<ul class="active">
+						<li class="active">
+							<strong>Tytuł: </strong>{$book.title}<br>
+							<strong>Autor: </strong>{$book.author_name} {$book.author_surname}<br>
+							<strong>Data wypożyczenia: </strong>{$book.borrow_start}<br>
         
 {*        <form action="" method="post">*}
              <a class="button" id="delete" onclick="confirmLink(event, '{$conf->action_root}returnBook/{$book.borrow_id}')">Zwróć</a>
@@ -49,9 +49,9 @@
 {*            <input type="hidden" name="borrow_id" value="{$book.borrow_id}">*}
 {*            <button type="submit" class="return">Zwróć</button>*}
 {*        </form>*}
-    </li>
-</ul>
-{/foreach}
+						</li>
+					</ul>
+					{/foreach}
 
 					{else}
 					<p>Brak obecnie wypożyczonych książek.</p>

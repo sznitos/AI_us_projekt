@@ -52,3 +52,27 @@ UNLOCK TABLES;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 -- Dump completed on 2024-06-04 19:52:46
+
+-- INSERT
+
+INSERT INTO `library_db`.`book` (`title`, `author_name`, `author_surname`, `year`) VALUES
+('Pan Tadeusz', 'Adam', 'Mickiewicz', 1834),
+('Lalka', 'Bolesław', 'Prus', 1890),
+('Quo Vadis', 'Henryk', 'Sienkiewicz', 1896),
+('Potop', 'Henryk', 'Sienkiewicz', 1886),
+('Faraon', 'Bolesław', 'Prus', 1897),
+('Chłopi', 'Władysław', 'Reymont', 1904),
+('W pustyni i w puszczy', 'Henryk', 'Sienkiewicz', 1911),
+('Kamienie na szaniec', 'Aleksander', 'Kamiński', 1943),
+('Syzyfowe prace', 'Stefan', 'Żeromski', 1897),
+('Krzyżacy', 'Henryk', 'Sienkiewicz', 1900),
+('Dziady', 'Adam', 'Mickiewicz', 1823),
+('Nad Niemnem', 'Eliza', 'Orzeszkowa', 1888),
+('Przedwiośnie', 'Stefan', 'Żeromski', 1924),
+('Ziemia obiecana', 'Władysław', 'Reymont', 1899),
+('Granica', 'Zofia', 'Nałkowska', 1935),
+('Cesarz', 'Ryszard', 'Kapuściński', 1978),
+('Sanatorium pod Klepsydrą', 'Bruno', 'Schulz', 1937),
+('Ferdydurke', 'Witold', 'Gombrowicz', 1937),
+('Tango', 'Sławomir', 'Mrożek', 1964),
+('Mistrz i Małgorzata', 'Michaił', 'Bułhakow', 1967);
